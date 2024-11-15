@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Practice</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Adventure Travel Club</h1>
+        <p>Beguin your journey with fellow adventurers.</p>
+      </div>
+
+      <div class="personal">
+        <h2>Personal Information</h2>
+        <hr/>
+          <div class="names">
+            <div>
+              <label class="first" for="name">First Name</label>
+              <br>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div>
+              <label class="last" for="name">Last Name</label>
+              <br>
+              <input type="text" id="name" name="name" required />
+            </div>
+          </div>
+
+          <br/>
+        <div class="email">
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" required />
+        </div>
+
+        <br/>
+        <div class="birthday">
+        <label for="birthday">Date of Birth</label>
+        <br>
+        <input type="date" id="birthday" name="birthday" />
+        </div>
+      </div>
+
+      <div class="preferences">
+        <div class="adventure-preferences">
+        <h2>Adventure Preferences</h2>
+        <hr>
+        <label for="experience">Experience Level</label>
+        <br>
+        <select id="experience" name="experience" required>
+        <option value="">Select your experience level</option>
+        </select>
+      </div>
+      <div class="prefered-activities">
+        <label>Prefered Activities</label>
+        <br>
+        <input type="checkbox" id="activities" name="activities" value="Hiking">
+        <label>Hiking</label>
+        <br>
+        <input type="checkbox" id="activities" name="activities" value="Rock Climbing">
+        <label>Rock Climbing</label>
+        <br>
+        <input type="checkbox" id="activities" name="activities" value="Kayaking">
+        <label>Kayaking</label>
+        <br>
+        <input type="checkbox" id="activities" name="activities" value="Scuba Diving">
+        <label>Scuba Diving</label>
+        <br>
+      </div>
+      <div class="trip-duration">
+        <label>Prefered Trip Duration</label>
+        <br>
+        <input type="checkbox" id="duration" name="duration" value="duration">
+        <label>Weekend Trips(2-3 days)</label>
+        <br>
+        <input type="checkbox" id="duration" name="duration" value="duration">
+        <label>Week-long Adventures(5-7 days)</label>
+        <br>
+        <input type="checkbox" id="duration" name="duration" value="duration">
+        <label>Extended Expectations(2+ Weeks)</label>
+        </div>
+      </div>
+
+      <div class="additional-information">
+        <h2>Additional Information</h2>
+        <hr>
+        <label>Fitness Level (1-10)</label>
+        <br>
+        <input type="range" id="level" min="1" max="10">
+        <br>
+        <label for="message">Tell us about yourself</label>
+        <br>
+        <textarea id="message" name="message" rows="6" cols="100" 
+        placeholder="Share your adventure experinces and what excites you about joining out club..."></textarea>
+      </div>
+
+      <div class="profile">
+        <label for="photo">Profile Photo</label>
+        <br>
+        <input type="file" id="photo" name="photo" accept=".pdf">
+      </div>
+
+      <div class="i-agree">
+      <input type="checkbox" id="terms" name="terms" value="terms">
+      <label for="terms">I agree to the Terms and Conditions and Privacy Policy</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </div>
+  </body>
+</html>
